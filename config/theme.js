@@ -11,15 +11,16 @@ export const colors = {
     blue: '#2e3246',
   },
   primary: {
-    base: '#3498db',
-    light: '#3e5fbc',
-    dark: '#284187',
+    base: '#E2C044',
+    light: '#E2C044',
+    dark: '#587B7F',
   },
   background: {
-    light: '#3e5fbc',
-    dark: '#284187',
+    light: '#65287A',
+    dark: '#441542',
   },
 };
+
 
 export const shadow = {
   card: '0 20px 30px rgba(0, 0, 0, 0.1)',
