@@ -10,7 +10,7 @@ const Wrapper = styled.header`
     height: 350px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 325px;
+    height: 350px;
   }
   position: relative;
   overflow: hidden;
