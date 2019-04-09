@@ -1,8 +1,8 @@
 ---
-path: "/post-one"
+path: "/new-delhi-india"
 cover: "./blocks.jpg"
 date: "2018-10-15"
-title: "Post Number One"
+title: "New Delhi, Delhi, India, 2017"
 published: true
 tags: ['website', 'react', 'other']
 ---
