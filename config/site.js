@@ -3,8 +3,8 @@ module.exports = {
   title: 'Joe Tower', // Navigation and Site Title
   titleAlt: 'Joe Tower', // Title for JSONLD
   description: 'Designer, frontend engineer, photographer, traveller.',
-  url: 'https://inspiring-gates-5ae468.netlify.com', // Domain of your site. No trailing slash!
-  siteUrl: 'https://inspiring-gates-5ae468.netlify.com/', // url + pathPrefix
+  url: 'https://joetower.netlify.com', // Domain of your site. No trailing slash!
+  siteUrl: 'https://joetower.netlify.com/', // url + pathPrefix
   siteLanguage: 'en', // Language Tag on <html> element
   logo: 'static/logo/logo.png', // Used for SEO
   banner: 'static/logo/banner.png',
