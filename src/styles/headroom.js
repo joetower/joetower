@@ -17,7 +17,7 @@ const headroom = css`
     svg {
       height: 2.5rem;
       g {
-        fill: ${theme.colors.white.base};
+        fill: ${theme.colors.black.base};
       }
     }
   }
@@ -38,17 +38,17 @@ const headroom = css`
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.white.light};
+    background-color: ${theme.colors.black.light};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {
-        color: ${theme.colors.black.base};
+        color: ${theme.colors.white.base};
         &:hover {
-          border-color: ${theme.colors.black.base};
-          color: ${theme.colors.black.base};
+          border-color: ${theme.colors.white.base};
+          color: ${theme.colors.white.base};
         }
         &:focus {
-          color: ${theme.colors.black.base};
+          color: ${theme.colors.white.base};
         }
       }
     }
@@ -57,11 +57,11 @@ const headroom = css`
     svg {
       height: 2.5rem;
       g {
-        fill: ${theme.colors.black.base};
+        fill: ${theme.colors.white.base};
       }
     }
     span {
-      color: ${theme.colors.black.base};
+      color: ${theme.colors.white.base};
     }
   }
 `;
