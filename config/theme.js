@@ -78,7 +78,7 @@ export const theme = {
     big: '83.33333rem',
   },
   borderRadius: {
-    default: '0.4rem',
+    default: '0',
     round: '100rem',
   },
   transitions: {

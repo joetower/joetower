@@ -85,7 +85,7 @@ export const query = graphql`
             fluid(
               maxWidth: 1920
               quality: 90
-              duotone: { highlight: "#386eee", shadow: "#2323be", opacity: 60 }
+              duotone: { highlight: "#65287A", shadow: "#441542", opacity: 60 }
             ) {
               ...GatsbyImageSharpFluid_withWebp
             }

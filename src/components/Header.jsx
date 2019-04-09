@@ -5,12 +5,12 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 300px;
+  height: 350px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 300px;
+    height: 350px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
-    height: 275px;
+    height: 325px;
   }
   position: relative;
   overflow: hidden;
