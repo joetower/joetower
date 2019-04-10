@@ -7,7 +7,7 @@ const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
   height: 350px;
   @media (max-width: ${props => props.theme.breakpoints.m}) {
-    height: 350px;
+    height: 400px;
   }
   @media (max-width: ${props => props.theme.breakpoints.s}) {
     height: 350px;
@@ -31,7 +31,7 @@ const Text = styled.div`
   padding: 0 2rem;
   margin-bottom: 3rem;
   align-items: center;
-`;
+`;''
 
 const Subtitle = styled.p`
   max-width: 650px;

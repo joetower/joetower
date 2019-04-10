@@ -11,14 +11,21 @@ const headroom = css`
   .headroom {
     display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
-    padding: 1rem 4.5rem;
+    padding: 1rem;
+
     svg {
       height: 2.5rem;
       g {
         fill: ${theme.colors.black.base};
       }
+    }
+  }
+  &.headroom {
+    @media (min-width: ${props => props.theme.breakpoints.m}) {
+      flex-direction: row;
+      padding: 1rem 4.5rem;
     }
   }
   .headroom--unfixed {

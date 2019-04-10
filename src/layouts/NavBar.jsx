@@ -12,11 +12,13 @@ const StyledLink = styled(Link)`
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  flex-flow:row wrap;
+  justify-content: center;
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
   font-size: 1.1rem;
   align-items: center;
+
   a {
     color: ${props => props.theme.colors.primary.light};
     margin-left: 2rem;
@@ -25,6 +27,11 @@ const Nav = styled.nav`
       color: ${props => props.theme.colors.white.grey};
     }
   }
+
+  @media (min-width: ${props => props.theme.breakpoints.m}) {
+    justify-content: flex-end;
+  }
+
 `;
 
 const NavBar = () => (
