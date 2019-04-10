@@ -21,8 +21,12 @@ const Nav = styled.nav`
 
   a {
     color: ${props => props.theme.colors.primary.light};
-    margin-left: 2rem;
     transition: all ${props => props.theme.transitions.default.duration};
+    font-weight:700;
+    + a {
+      margin-left: 2rem;
+    }
+     
     &:hover {
       color: ${props => props.theme.colors.white.grey};
     }
