@@ -13,11 +13,11 @@ const headroom = css`
     justify-content: space-between;
     flex-flow: column wrap;
     width: 100%;
+    max-width:70rem;
     padding: 1rem;
 
     @media (min-width: 460px) {
       flex-flow: row wrap;
-      padding: 1rem 4.5rem;
     }
     
     svg {

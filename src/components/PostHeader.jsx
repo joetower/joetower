@@ -4,17 +4,14 @@ import PropTypes from 'prop-types';
 
 const Wrapper = styled.header`
   background: ${props => props.theme.gradient.rightToLeft};
-  height: 200px;
 `;
 
 const Text = styled.div`
   color: ${props => props.theme.colors.primary.base};
-  text-align: center;
+  text-align: left;
   width: 100%;
   max-width: ${props => props.theme.layout.base};
-  padding: 0 2rem;
-  margin-bottom: 3rem;
-
+  padding: 2rem;
 `;''
 
 const Subtitle = styled.p`
