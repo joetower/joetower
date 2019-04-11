@@ -12,6 +12,8 @@ const Text = styled.div`
   color: ${props => props.theme.colors.primary.base};
   text-align: left;
   width: 100%;
+  max-width: 70rem;
+  margin: 0 auto;
   padding: 2rem;
 `;''
 

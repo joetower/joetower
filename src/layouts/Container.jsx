@@ -6,9 +6,10 @@ const Wrapper = styled.section`
   text-align: ${props => (props.center ? 'center' : '')};
   margin: auto;
   padding: 3rem 1.5rem;
-  max-width: ${props => props.theme.layout[props.type]};
   height: 100%;
   flex: 1;
+  max-width: 70rem;
+  margin: 0 auto;
 `;
 
 const Container = ({ children, type, className, center }) => (

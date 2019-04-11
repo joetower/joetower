@@ -10,13 +10,28 @@ const SuggestionBar = styled.div`
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  background: ${props => props.theme.colors.white.light};
-  box-shadow: ${props => props.theme.shadow.suggestion};
+  background: ${props => props.theme.colors.primary.light};
 `;
 const PostSuggestion = styled.div`
   display: flex;
-  align-items: center;
-  margin: 1rem 3rem 0 3rem;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  flex: 1 50%;
+  @media (min-width: 600px) {
+    flex: 0 auto;
+  }
+  a {
+    color: ${props => props.theme.colors.primary.dark};
+    padding:1rem;
+  }
+  span {
+    font-size:0.8rem;
+  }
+  p {
+    margin:0;
+    font-size:1rem;
+    font-weight:700;
+  }
 `;
 
 const Post = ({ data, pageContext }) => {
@@ -45,16 +60,16 @@ const Post = ({ data, pageContext }) => {
         <PostSuggestion>
           {prev && (
             <Link to={prev.frontmatter.path}>
-              Previous
-              <h3>{prev.frontmatter.title}</h3>
+              <span>Previous</span>
+              <p>{prev.frontmatter.title}</p>
             </Link>
           )}
         </PostSuggestion>
         <PostSuggestion>
           {next && (
             <Link to={next.frontmatter.path}>
-              Next
-              <h3>{next.frontmatter.title}</h3>
+              <span>Next</span>
+              <p>{next.frontmatter.title}</p>
             </Link>
           )}
         </PostSuggestion>

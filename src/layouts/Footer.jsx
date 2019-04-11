@@ -8,7 +8,6 @@ const Wrapper = styled.footer`
   position: relative;
   padding: 2rem;
   bottom: 0;
-  box-shadow: ${props => props.theme.shadow.footer};
   background: ${props => props.theme.gradient.leftToRight};
   font-family: ${props => props.theme.fontFamily.body};
   font-weight: 500;
@@ -29,10 +28,10 @@ const Text = styled.div`
 const Footer = () => (
   <Wrapper>
     <Text>
-      <p class="slogan">
+      <p className="slogan">
         Design. Front Web Development. Photography.
       </p>
-      <span class="copyright">
+      <span className="copyright">
         All content &#169; Joe Tower.
       </span>
     </Text>

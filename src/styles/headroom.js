@@ -28,10 +28,10 @@ const headroom = css`
       }
     }
     img {
-      margin: 0 auto 1rem;
+      margin: 0 auto;
       max-width: 100px;
 
-      @media (min-width: 460px) {
+      @media (min-width: 600px) {
         margin:0; 
         max-width: 200px;
       }
@@ -44,11 +44,32 @@ const headroom = css`
   }
   .headroom--scrolled {
     transition: ${theme.transitions.headroom.transition};
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    img {
+      width:50px;
+    }
+    nav {
+      a {
+        font-size: 0.75rem;
+      }
+    }
   }
   .headroom--unpinned {
     position: fixed;
     transform: translateY(-100%);
     transition: ${theme.transitions.headroom.transition};
+    justify-content: space-between;
+    img {
+      margin: 0 auto;
+      max-width: 100px;
+
+      @media (min-width: 600px) {
+        margin:0; 
+        max-width: 200px;
+      }
+    }
   }
   .headroom--pinned {
     position: fixed;
@@ -56,8 +77,14 @@ const headroom = css`
     transition: ${theme.transitions.headroom.transition};
     background-color: ${theme.colors.background.light};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+    flex-flow: row wrap;
+
+    img {
+      width:50px;
+    }
     nav {
       a {
+        font-size: 0.75rem;
         color: ${theme.colors.white.base};
         &:hover {
           border-color: ${theme.colors.white.base};
