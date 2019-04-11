@@ -10,20 +10,30 @@ const headroom = css`
   }
   .headroom {
     display: flex;
-    justify-content: space-between;
-    flex-flow: column wrap;
+    justify-content: center;
+    flex-flow: column nowrap;
     width: 100%;
-    max-width:70rem;
     padding: 1rem;
 
     @media (min-width: 460px) {
       flex-flow: row wrap;
     }
-    
+    @media (min-width: 600px) {
+      justify-content: space-between;
+    }
     svg {
       height: 2.5rem;
       g {
         fill: ${theme.colors.black.base};
+      }
+    }
+    img {
+      margin: 0 auto 1rem;
+      max-width: 100px;
+
+      @media (min-width: 460px) {
+        margin:0; 
+        max-width: 200px;
       }
     }
   }
@@ -44,7 +54,7 @@ const headroom = css`
     position: fixed;
     transform: translateY(0);
     transition: ${theme.transitions.headroom.transition};
-    background-color: ${theme.colors.black.blue};
+    background-color: ${theme.colors.background.light};
     box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
     nav {
       a {

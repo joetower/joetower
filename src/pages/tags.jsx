@@ -1,14 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Layout, Container } from 'layouts';
-import { Header, TagsBlock } from 'components';
+import { TagsBlock, Header, PostHeader } from 'components';
 
 const Tags = ({ pageContext }) => {
   const { tags } = pageContext;
 
   return (
     <Layout>
-      <Header title="Posts by Tags"></Header>
+      <Header/>
+      <PostHeader title="Posts by Tags"></PostHeader>
       <Container>
         <TagsBlock list={tags} />
       </Container>

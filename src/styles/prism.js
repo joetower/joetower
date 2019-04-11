@@ -48,6 +48,9 @@ const prism = css`
       height: 12px;
     }
   }
+  .gatsby-resp-image-wrapper + .gatsby-resp-image-wrapper {
+    margin-top:1rem;
+  }
   pre[class*='language-'] {
     background: #131316;
   }

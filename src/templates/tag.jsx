@@ -4,7 +4,7 @@ import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 import { Layout, Container } from 'layouts';
-import { Header } from 'components';
+import { Header, PostHeader } from 'components';
 import config from '../../config/site';
 
 const StyledLink = styled(Link)`
@@ -32,9 +32,10 @@ const Tag = ({ pageContext }) => {
   return (
     <Layout>
       <Helmet title={`${tagName} | ${config.siteTitle}`} />
-      <Header title={upperTag}>
+      <Header/>
+      <PostHeader title={upperTag}>
         <StyledLink to="/tags">All Tags</StyledLink>
-      </Header>
+      </PostHeader>
       <Container>
         <Information>
           {posts.map((post, index) => (
