@@ -3,7 +3,7 @@ import { graphql, Link } from 'gatsby';
 import styled from '@emotion/styled';
 import PropTypes from 'prop-types';
 import { Layout, Container, Content } from 'layouts';
-import { TagsBlock, Header, SEO } from 'components';
+import { TagsBlock, Header, PostHeader, SEO } from 'components';
 import '../styles/prism';
 
 const SuggestionBar = styled.div`
@@ -35,7 +35,8 @@ const Post = ({ data, pageContext }) => {
         pathname={post.frontmatter.path}
         article
       />
-      <Header title={title} date={date} cover={image} />
+      <Header cover={image} />
+      <PostHeader title={title} date={date} />
       <Container>
         <Content input={html} />
         <TagsBlock list={post.frontmatter.tags || []} />
