@@ -21,12 +21,6 @@ const headroom = css`
     @media (min-width: 600px) {
       justify-content: space-between;
     }
-    svg {
-      height: 2.5rem;
-      g {
-        fill: ${theme.colors.black.base};
-      }
-    }
     img {
       margin: 0 auto;
       max-width: 100px;
@@ -97,12 +91,6 @@ const headroom = css`
     }
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-    svg {
-      height: 2.5rem;
-      g {
-        fill: ${theme.colors.white.base};
-      }
-    }
     span {
       color: ${theme.colors.white.base};
     }

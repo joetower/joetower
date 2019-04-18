@@ -34,7 +34,7 @@ const Tag = ({ pageContext }) => {
       <Helmet title={`${tagName} | ${config.siteTitle}`} />
       <Header/>
       <PostHeader title={upperTag}>
-        <StyledLink to="/tags">All Tags</StyledLink>
+        <StyledLink to="/categories">All Categories</StyledLink>
       </PostHeader>
       <Container>
         <Information>

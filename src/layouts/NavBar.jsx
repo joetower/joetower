@@ -42,8 +42,8 @@ const NavBar = () => (
       <img src={logo} alt="Joe Tower Signature Logo" />
     </StyledLink>
     <Nav>
-      <Link to="/blog">Writing</Link>
-      <Link to="/tags/photo-story">Photography</Link>
+      <Link to="/category/design">Design</Link>
+      <Link to="/category/photo-story">Photography</Link>
       <Link to="/about">About</Link>
     </Nav>
   </Headroom>

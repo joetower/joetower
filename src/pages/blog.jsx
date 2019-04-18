@@ -1,9 +1,24 @@
 import React from 'react';
 import { graphql } from 'gatsby';
-import Helmet from 'react-helmet';
 import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
+import styled from '@emotion/styled';
 import { Header, BlogList } from 'components';
 import { Layout } from 'layouts';
+
+const PostWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 4rem 4rem 1rem 4rem;
+  @media (max-width: 1000px) {
+    margin: 4rem 2rem 1rem 2rem;
+  }
+  @media (max-width: 700px) {
+    margin: 4rem 1rem 1rem 1rem;
+  }
+`;
 
 const Blog = ({ data }) => {
   const { edges } = data.allMarkdownRemark;
@@ -11,6 +26,7 @@ const Blog = ({ data }) => {
     <Layout>
       <Helmet title={'Articles by Joe Tower'} />
       <Header title="Writing"></Header>
+      <PostWrapper>
       {edges.map(({ node }) => (
         <BlogList
           key={node.id}
@@ -22,6 +38,7 @@ const Blog = ({ data }) => {
           excerpt={node.excerpt}
         />
       ))}
+      </PostWrapper>
     </Layout>
   );
 };
@@ -55,7 +72,7 @@ export const query = graphql`
       edges {
         node {
           id
-          excerpt(pruneLength: 200)
+          excerpt(pruneLength: 70)
           frontmatter {
             title
             path

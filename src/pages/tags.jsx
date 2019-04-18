@@ -9,7 +9,7 @@ const Tags = ({ pageContext }) => {
   return (
     <Layout>
       <Header/>
-      <PostHeader title="Posts by Tags"></PostHeader>
+      <PostHeader title="Posts by Category"></PostHeader>
       <Container>
         <TagsBlock list={tags} />
       </Container>
